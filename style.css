@@ -1,0 +1,100 @@
+.body{
+    background-color: rgb(9, 7, 7);
+}
+.next
+{
+   
+    color: white;
+  }
+.body{
+    color: rgb(250, 248, 248);
+    background-image: url('https://img.freepik.com/free-psd/modern-abstract-deep-blue-gradient-background_84443-3754.jpg');
+}
+.i{
+    color: red;
+
+}
+.intro{
+    color: yellow;
+}
+.introduction{
+    color: whitesmoke;
+}
+.inside{
+    color: greenyellow;
+}
+.pic{
+    border-radius: 20%;
+}
+.frontend{
+    color: black;
+    background-color: whitesmoke;
+    width: 25%;
+}
+.des{
+    color: black;
+}
+.skills{
+    width: 25%;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10%;
+}
+.dropbtn
+{
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5%;
+    align-items :right;
+}
+.dropdown{
+    position: relative;
+    display:inline-table;
+    width: 100%;
+    height: 20%;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width:140px;
+    box-shadow: 0px 8px 8px 0px;
+    z-index: 1;
+    background-color: whitesmoke;
+}
+.dropdown-content a{
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+    color:red;
+    background-color:black;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown:hover .dropbtn{
+    background-color: blue;
+}
+.contacts{
+    background-color: black;
+    height:500px;
+    width: 100%;
+}
+.contacts a{
+    color:white
+}
+.question{
+    width: 15%;
+    
+    height:70px;
+}
+.button{
+    border-radius: 10%;
+    color: black;
+    background-color: lightblue;
+}
