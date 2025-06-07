@@ -34,8 +34,18 @@
 .des{
     color: black;
 }
+.skill_back{
+    
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    gap: 20px;
+    padding: 20px;
+
+}
 .skills{
-    width: 25%;
+   float:var();
+    width: 20%;
     background-color: whitesmoke;
     color: black;
     border-radius: 10%;
@@ -97,4 +107,11 @@
     border-radius: 10%;
     color: black;
     background-color: lightblue;
+}
+@media only screen and (max-width:600px)
+{
+     #pic
+     {
+        background-image: url(image/phone_background.png);
+     }
 }
