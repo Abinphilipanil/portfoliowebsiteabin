@@ -10,6 +10,14 @@
     color: rgb(250, 248, 248);
     background-image: url('https://img.freepik.com/free-psd/modern-abstract-deep-blue-gradient-background_84443-3754.jpg');
 }
+.typing-target {
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid black;
+  width: fit-content;
+}
+
 .i{
     color: red;
 
