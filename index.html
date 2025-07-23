@@ -32,7 +32,8 @@
     <section class="introduction">
         <p>
             <br>
-            <b><h3>Welcome to My Creative Corner!</h3></b><br>
+            <b><h3 id="typing-intro" class="typing-target" data-text="Welcome to My Creative Corner!"></h3>
+</b><br>
           
             Hello! I'm <i><b>ABIN PHILIP ANIL</b></i>, an engineering student from Kulanada, Kerala. With a passion for be a web developer, I have honed my skills and expertise through workshops and knowledge gained from my seniors. My work is a reflection of my commitment to my passion.
             
@@ -45,7 +46,8 @@
     </section>
 
     <section id="skills">
-        <h1 class="intro"><i>Skills...</i></h1>
+        <h3 class="typing-target" data-text="Skills..."></h3>
+
     </section>
         <p>
             <br>
@@ -94,7 +96,8 @@ In addition to front-end skills, I have a strong foundation in programming langu
              
         </div>
         <section id="works">
-            <h1 class="intro"><i>My works...</i></h1>
+            <h3 class="typing-target" data-text="Works..."></h3>
+
         </section>
         <p>
             I have worked on small-scale frontend development projects, focusing on building user-friendly interfaces using HTML and CSS.These projects have helped me develop practical skills in delivering visually appealing and functional web pages.
@@ -154,7 +157,8 @@ In addition to front-end skills, I have a strong foundation in programming langu
         
        </section>
 <section id="contact">
-    <h1 class="intro"><i>Contact Details</i></h1>
+    <h3 class="typing-target" data-text="Contact..."></h3>
+
 </section>
 <p>
     For more info.
@@ -174,6 +178,34 @@ In addition to front-end skills, I have a strong foundation in programming langu
     <h1><i>THANK YOU FOR THE VISIT</i></h1>
     </center>
 </div>
+<script>
+    function typeText(element, text, speed = 50) {
+        let index = 0;
+        function type() {
+            if (index < text.length) {
+                element.textContent += text.charAt(index);
+                index++;
+                setTimeout(type, speed);
+            }
+        }
+        type();
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.dataset.typed) {
+                const element = entry.target;
+                const text = element.dataset.text;
+                typeText(element, text);
+                element.dataset.typed = "true"; // only type once
+            }
+        });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.typing-target').forEach(el => {
+        observer.observe(el);
+    });
+</script>
 
 </body>
 </html>
